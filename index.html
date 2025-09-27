@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant Colony Simulator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ant Colony Simulator</h1>
+        <div class="controls">
+            <button id="startBtn">Start Simulation</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="resetBtn">Reset</button>
+            <button id="addFoodBtn">Add Food</button>
+        </div>
+        <div class="info">
+            <span id="antCount">Ants: 0</span>
+            <span id="foodCount">Food: 0</span>
+            <span id="foodCollected">Collected: 0</span>
+        </div>
+        <canvas id="simulationCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <!-- JavaScript modules -->
+    <script src="js/pheromone.js"></script>
+    <script src="js/food.js"></script>
+    <script src="js/ant.js"></script>
+    <script src="js/colony.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
